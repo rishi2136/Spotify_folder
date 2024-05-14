@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="icon" href="./spotify_photo/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="spotify.css">
+</head>
+
+<body>
+  <div class="base">
+    <%- include("sidebar.ejs") %>
+      <%- include("mainScreen.ejs") %>
+        <div class="player-box">
+          <%- include("player.ejs") %>
+            <%- include("footerNav.ejs") %>
+        </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
